@@ -1,0 +1,11 @@
+{
+  "portfoliodb": {
+    "host": "localhost",
+    "port": 27017,
+    "database": "portfoliodb",
+    "password": "",
+    "name": "portfoliodb",
+    "user": "",
+    "connector": "mongodb"
+  }
+}

@@ -1,0 +1,26 @@
+<g>
+    <g id="roc">
+        <path fill="#7EB8B3" d="M360.55 162.67l-47.36-.7-47.36-.7 24.31-39.42 24.3-39.43 23.06 40.13 23.05 40.12z"/>
+        <path fill="#91C6BC" d="M281.91 135.11l-14.52-34.14-14.52-34.13 30.89 7.61 30.9 7.61-16.37 26.52-16.38 26.53z"/>
+        <path fill="#7DAFA7" d="M265.83 161.27l-12.96-94.43 29.04 68.27-16.08 26.16z"/>
+        <path fill="#A2DBD0" d="M252.87 66.84L301.7 3.17l58.85 72.57-45.89 6.32-61.79-15.22z"/>
+        <path fill="#7DAFA7" d="M301.7 3.17l69.74 13.52-10.89 59.05L301.7 3.17z"/>
+        <path fill="#91C6BC" d="M371.16 16.86l41.71 89.32L360 162.67v-86.6l11.16-59.21z"/>
+        <path fill="#A2DBD0" d="M314.11 82.31L360 74.09v89.08l-45.89-80.86zM360 76.07v-1.98l34.58-7.25 18.29 39.34L360 76.07z"/>
+        <path opacity=".5" fill="{{content.color}}" d="M374.45 141.44l-37.06 17.77-40.84-7.99-29.02-30.69-6.11-41.67 19.13-36.74 37.06-17.77 40.84 7.98 29.02 30.7 6.11 41.67-19.13 36.74z"/>
+        <text opacity=".5" transform="translate(290 110)" fill="#f7f7f7" font-family="'Neucha'" font-weight="300" font-size="50">{{content.text}}</text>
+
+    </g>
+    <circle fill="#333" cx="315.75" cy="160.09" r="2.84"/>
+    <circle fill="#333" cx="322.047" cy="158.863" r="1.25"/>
+    <path fill="none" stroke="#333" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M316.64 163.13l1.41 5.87"/>
+    <path fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M317.224 163.15l3.792.004 1.03-4.293"/>
+    <circle fill="#7EB8B3" cx="317.33" cy="159.67" r=".67"/>
+    <!--LES JAMBES-->
+    <g id="jambe1">
+        <path fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M317.05,169l-3.39,7.854"/>
+    </g>
+    <g id="jambe2">
+        <path fill="none" stroke="#333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" d="M322.047,176.854l-3.39-7.854"/>
+    </g>
+</g>

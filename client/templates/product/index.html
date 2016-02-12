@@ -1,0 +1,22 @@
+<link href="templates/product/css/style.css" rel="stylesheet" type="text/css" />
+<header>
+    <img ng-repeat='imgHeader in imgHeaders' ng-src="{{imgHeader.url}}" alt="{{imgHeader.name}}"/>
+</header>
+<div class="content-project">
+    <div class="wrap-content-project">
+        <div class="title-project">
+            <h2>{{titleProject}}</h2>
+        </div>
+        <h3>{{resume}}</h3>
+        <section>
+            <h2>Outils utilisés.</h2>
+            <svg ng-repeat='ico in icos' data-ng-include src="ico.url" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 100 100"></svg>
+        </section>
+        <section>
+            <h2>Mise en place.</h2>
+            <p ng-repeat="describe in describes">{{describe.content}}</p>
+            <img ng-repeat='imgContent in imgContents' ng-src="{{imgContent.url}}" alt="{{imgContent.name}}"/>
+        </section>
+    </div>
+
+</div>

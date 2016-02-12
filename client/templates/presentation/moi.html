@@ -1,0 +1,35 @@
+<link href="templates/presentation/css/style.css" rel="stylesheet" type="text/css" />
+<h1>Huahuazoa</h1>
+<div class="huahuazoa">
+    <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 40.24 40.24">
+        <path fill="#B49E31" d="M30.854 9.304s2.74-2.197 3.06-3.044c.323-.846 3.536 5.58 2.183 7.78-1.352 2.2 2.54 0 2.54 0S32.33 30.994 29.84 31.63c-2.49.636-3.2 1.59-3.2 1.59M9.386 9.304S6.646 7.107 6.324 6.26c-.32-.846-3.535 5.58-2.182 7.78 1.354 2.2-2.537 0-2.537 0S7.91 30.994 10.4 31.63c2.49.636 3.202 1.59 3.202 1.59"/>
+        <path fill="#F9DFA9" stroke="#E4CEA0" stroke-miterlimit="10" d="M31.975 19.79c1.05-1.352 2.096.508 1.922 2.876-.176 2.368-1.922 4.06-3.492 4.397-5.236 10.655-10.122 10.825-10.122 10.825s-4.887-.17-10.123-10.825c-1.57-.338-3.317-2.03-3.492-4.397-.174-2.368.874-4.23 1.92-2.875 0 0-.907-13.53 11.103-13.53s12.285 13.53 12.285 13.53z"/>
+        <path opacity=".8" fill="#F1DAB0" d="M32.245 19.79c1.047-1.352 2.096.508 1.922 2.876-.176 2.368-1.922 4.06-3.492 4.397-5.236 10.655-10.123 10.825-10.123 10.825l-.59-31.63c12.007.002 12.283 13.533 12.283 13.533z"/>
+        <path fill="#B49E31" d="M9.035 23.85s2.368-6.428 1.86-8.288c10.487 0 15.56-4.736 15.56-4.736s3.723 1.015 2.37 6.512c1.353.59 1.69 5.497 1.69 5.497s.45-3.567 2.34-3.476c.027-6.505.873-10.73-2.51-13.1-3.382-2.37-15.222-1.692-15.222-1.692s-3.213-.507-3.213-2.03-6.802 6.427-5.26 15.9c1.203.9 3.086 3.185 2.385 5.412z"/>
+        <ellipse fill="#85A3AE" cx="15.97" cy="20.888" rx="1.607" ry="1.186"/>
+        <ellipse fill="#85A3AE" cx="24.57" cy="20.888" rx="1.606" ry="1.186"/>
+    </svg>
+    <div>
+        <p ng-repeat="resume in resumes">{{resume.text}}</p>
+    </div>
+    <h1>Outils de développement.</h1>
+
+    <div class="devtools" data-ng-repeat="dev in json.devs" style="width: 20vw; display: inline-block;">
+        <canvas id="doughnut" class="chart chart-doughnut"
+                chart-data="dev.data" chart-labels="dev.labels" chart-colours="dev.colours" chart-options ="options" chart-legend="legend">
+        </canvas>
+    </div>
+
+    <h1>Outils graphique.</h1>
+
+
+    <div class="graphtools" style="width: 80vw; margin: auto; padding-bottom: 1em;">
+        <canvas id="polar-area" class="chart chart-polar-area"
+                chart-data="dataGraph" chart-labels="labelsGraph" chart-colours="coloursGraph" chart-options ="optionsGraph" chart-legend="legendGraph">
+        </canvas> 
+    </div>
+    <h1>Entourage</h1>
+    <div class="copain">
+        <a ng-repeat="copain in copains" href="{{copain.link}}" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100" data-ng-include src="copain.url"></svg></a>
+    </div>
+</div>

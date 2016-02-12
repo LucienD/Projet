@@ -1,0 +1,20 @@
+<h1>{{title}}</h1>
+
+<md-content ng-cloak class="md-padding" layout="row" layout-wrap layout-align="center start" layout-xs="column">
+    <md-card flex="25" flex-xs="80" layout="column" ng-repeat="card in cards">
+        <img ng-src="{{card.img}}" class="md-card-image" alt="{{card.title}}"/>
+        <md-card-title>
+            <md-card-title-text>
+                <span class="md-headline">{{card.title}}</span>
+            </md-card-title-text>
+        </md-card-title>
+        <md-card-content>
+            <p>{{card.resume}}</p>
+            <span>{{card.state}}</span>
+        </md-card-content>
+        <md-card-actions layout="row" layout-align="end center">
+                 <svg ng-repeat="tool in card.tools" data-ng-include src="tool.url" aria-label="icon" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 100 100"></svg>
+            <a target="_blank" href="{{card.link}}"><md-button>Aller sur le site</md-button></a>
+        </md-card-actions>
+    </md-card>
+</md-content>
