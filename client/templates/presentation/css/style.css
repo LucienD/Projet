@@ -1,88 +1,96 @@
-body .page-presentation{
-    text-align: center;
-    background: #fff;
-    font-family: 'Open sans';
-    background: #173B44;
+.page-presentation {
+  text-align: center;
+  background: #fff;
+  font-family: monospace;
+  background: #173B44;
 }
 
-.huahuazoa h1{
-    position: relative;
-    border: none;
-    text-decoration: none;
-    color: #444;
-    padding: 0em 0em 1em;
-    font-size: 3em;
+.page-presentation section svg{
+  display: block;
+  margin: auto;
+}
+.persozen{
+  animation: zen 2.5s ease infinite;
+  -webkit-animation: zen 2.5s ease infinite;
+}
+@keyframes zen{
+  50%{ transform: translate(0,-0.3em); }
+}
+@-webkit-keyframes zen{
+  50%{ -webkit-transform: translate(0,-0.3em); }
 }
 
-.page-presentation .devtools{
-    margin-top: 2em;
-    color: #444;
+.huahuazoa h1 {
+  position: relative;
+  border: none;
+  text-decoration: none;
+  color: #444;
+  padding: 0em 0em 1em;
+  font-size: 3em;
 }
-
-.page-presentation .doughnut-legend li:last-child{
-    display: none;
+.page-presentation .devtools {
+  margin-top: 2em;
+  color: #444;
 }
-
-.page-presentation .graphtools{
-    color: #444;
+.page-presentation .doughnut-legend li:last-child {
+  display: none;
 }
-
+.page-presentation .graphtools {
+  color: #444;
+}
 
 /*Presentation Moi
 -----------------------------------------------------------*/
 
-.huahuazoa{
-    background: white;
-    padding: 2em;
+.huahuazoa {
+  background: white;
+  padding: 2em;
 }
-
-.huahuazoa div p{
-    margin: 2em;
-    text-align: left;
-    color: #444;
-    font-size: 1.4em;
+.huahuazoa div p {
+  margin: 2em;
+  max-width: 26em;
+  display: inline-block;
+  vertical-align: top;
+  color: #444;
+  font-size: 1.3em;
 }
-
-.copain a{
-    margin: 0 1em;
+.copain a {
+  margin: 0 1em;
 }
-.copain svg{
-    background: #f7f7f7;
-    border: 25px solid #f7f7f7;
-    border-radius: 50%;
-    transition: all 0.2s ease-in-out;
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+.copain svg {
+  display: inline-block;
+  background: #f7f7f7;
+  border: 15px solid #f7f7f7;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .26);
 }
-.copain svg:hover{
-    transform: scale(1.2);
+.copain svg:hover {
+  transform: scale(1.2);
 }
-
-.content-me h3{
-    font-size: 2.5em;
-    color: #444;
-    font-weight: 100;
+.content-me h3 {
+  font-size: 2.5em;
+  color: #444;
+  font-weight: 100;
 }
-.content-me h4{
-    font-size: 2.2em;
-    font-style: italic;
-    font-weight: 100;
-    margin: 0;
-    padding: 2em 0em 0em;
-    color: #444;
-    max-width: 1240px;
-    margin: 0 auto;
+.content-me h4 {
+  font-size: 2.2em;
+  font-style: italic;
+  font-weight: 100;
+  margin: 0;
+  padding: 2em 0em 0em;
+  color: #444;
+  max-width: 1240px;
+  margin: 0 auto;
 }
-
 @media screen and (max-width: 600px) {
-
-    /*Page Presentation Resize*/
-    .page-presentation h1{
-        font-size: 2em;
-        margin: 2.5em 0em 1em;
-    }
-    .huahuazoa div p{
-        margin: 1em;
-        font-size: 1em;
-    }
-
+  /*Page Presentation Resize*/
+  .page-presentation h1 {
+    font-size: 2em;
+    margin: 2.5em 0em 1em;
+  }
+  .huahuazoa div p {
+    margin: 1em;
+    font-size: 1em;
+  }
 }

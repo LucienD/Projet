@@ -4,6 +4,7 @@ body{
     padding: 0;
     overflow: hidden;
     background: #173B44;
+    font-family: monospace;
 }
 body .page{
     width: 100vw;
@@ -135,7 +136,7 @@ h1{
     padding: 0.2em;
     color: #FFFFFF;
     font-size: 5rem;
-    font-family: 'Neucha', cursive;
+    font-family: monospace;
     font-weight: 600;
     transition: all 0.5s ease;
 }
@@ -321,7 +322,7 @@ h1{
     text-align: center;
     color: white;
     font-size: 4em;
-    font-family: 'Open sans';
+    font-family: monospace;
     z-index: 1;
 }
 
@@ -438,7 +439,7 @@ h1{
     font-size: 2em;
     width: 400px;
     margin-top: 0.5em;
-    font-family: 'Arial';
+    font-family: monospace;
     color: #fff;
     outline: none;
     height: 220px;
